@@ -42,6 +42,15 @@ Example outputs</br></br>
 </p>
 
 # Facenet
-Facenet paper <a href="https://arxiv.org/pdf/1503.03832.pdf">link</a>.
+Facenet paper <a href="https://arxiv.org/pdf/1503.03832.pdf">link</a>. It is better to go through the paper to get more understanding on architecture and the loss function is used.
 
 <p>The Facenet model can be used with pretrained weights. For testing purposes this repository used <b>RMFRD</b> dataset which can be downloaded <a href="https://drive.google.com/drive/folders/1pBDhnJoz16rVEtW5uLv_3is98og2wyYM?usp=sharing">here</a>.</p>
+
+<p align="middle">
+  <img src="./inputs/facenet-arch.png?raw=true" alt="Facenet Architecture" title="Facenet">
+</p>
+</br>
+
+<p>
+ Import the face_recognition_model into your python file and create a <b>FaceRecognizer</b> object. <b>add_face</b> can be called to add some reference images of a person with a label. The predict function can then be called to recognize the face on new data. 
+</p>
