@@ -23,6 +23,7 @@ class FaceRecognizer():
     def add_face(self, imgs, label):
         # Function to add a face class to the model.
         # The label can be preferrably a string
+        # imgs can be tensor or numpy array
         for img in imgs:
             boxes, probs, landmarks = self.mtcnn.detect_with_eyes(img)
 
@@ -41,6 +42,8 @@ class FaceRecognizer():
         self.knn.fit(np.array(self.imgs))
 
     def predict(self, img):
+        # Function to predict a new face
+        # img must be a numpy array
         label = self.knn.predict(img)
 
         return self.map[label]
