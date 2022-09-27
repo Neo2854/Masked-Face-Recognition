@@ -26,9 +26,9 @@ python mtcnn.py <path_to_img>
 Example outputs</br></br>
 <p align="middle">
  <img src="./outputs/output2.png?raw=true" alt="output2.png">
- <img src="./outputs/output3.png?raw=true" alt="output2.png">
- <img src="./outputs/live_out1.png?raw=true" alt="live_out1.png">
- <img src="./outputs/live_out2.png?raw=true" alt="live_out2.png">
+ <img src="./outputs/output3.png?raw=true" alt="output2.png"></br>
+ <img src="./outputs/live_out1.png?raw=true" alt="live_out1.png" width=280 height=340>
+ <img src="./outputs/live_out2.png?raw=true" alt="live_out2.png" width=280 height=340>
 </p>
 </br>
 
@@ -40,3 +40,8 @@ Example outputs</br></br>
 <p align="middle">
  <img src="./outputs/aligned.png?raw=true" alt="output2.png">
 </p>
+
+# Facenet
+Facenet paper <a href="https://arxiv.org/pdf/1503.03832.pdf">link</a>.
+
+<p>The Facenet model can be used with pretrained weights. For testing purposes this repository used <b>RMFRD</b> dataset which can be downloaded <a href="https://drive.google.com/drive/folders/1pBDhnJoz16rVEtW5uLv_3is98og2wyYM?usp=sharing">here</a>.</p>
