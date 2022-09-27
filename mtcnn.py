@@ -41,6 +41,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Face detection using MTCNN")
     parser.add_argument("image", action='store')
     parser.add_argument("--align", action='store_true', default=True)
+    parser.add_argument("--save", action='store', default=None)
 
     args = parser.parse_args()
     img = cv2.imread(args.image)
@@ -57,6 +58,9 @@ if __name__ == "__main__":
     
     if args.align:
         img = rotate(img, landmarks[0])
+
+    if args.save:
+        cv2.imwrite("./outputs/" + args.save, img)
 
     cv2.imshow("output", img)
     cv2.waitKey(0)
