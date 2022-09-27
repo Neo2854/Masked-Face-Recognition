@@ -1,0 +1,7 @@
+torch
+numpy
+scikit-learn
+matplotlib
+opencv-python
+imutils
+facenet-pytorch
